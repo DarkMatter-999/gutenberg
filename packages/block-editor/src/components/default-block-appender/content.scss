@@ -74,12 +74,10 @@
  */
 
 .block-editor-block-list__block .block-list-appender {
-	position: absolute;
+	position: relative;
 	list-style: none;
 	padding: 0;
 	z-index: z-index(".block-editor-block-list__block .block-list-appender");
-	bottom: 0;
-	right: 0;
 
 	// These rules needs extra specificity as it's affected by DOM rules.
 	&.block-list-appender {
