@@ -99,9 +99,11 @@
 	.block-list-appender__toggle {
 		flex-direction: row;
 		box-shadow: none;
-		height: $button-size-small;
-		width: $button-size-small;
+		height: 1em;
+		width: 1em;
+		font-size: 1em;
 		min-width: $button-size-small;
+		min-height: $button-size-small;
 
 		// Hide by default, then we unhide it when the selected block is a direct ancestor.
 		display: none;
@@ -110,8 +112,9 @@
 		padding: 0 !important;
 
 		// Basic look
-		background: $gray-900;
-		color: $white;
+		border: 1px solid;
+		border-radius: 2px;
+		box-sizing: border-box;
 
 		&:hover {
 			color: $white;
